@@ -1,0 +1,21 @@
+<div class="grid-wrapper">
+    <button class="k-button"  onclick="window.print()">
+        Print
+      </button>
+    <kendo-chart [categoryAxis]="{ categories: categories }">
+        <kendo-chart-title text="Amount/Service ({{from_date}} To {{to_date}})" 
+        color="blue"
+        background="#ccff00"
+        font="10pt sans-serif"
+                     
+        >
+    </kendo-chart-title>
+        <kendo-chart-legend position="bottom" orientation="vertical"></kendo-chart-legend>
+        <kendo-chart-tooltip format="{0}" ></kendo-chart-tooltip>
+        <kendo-chart-series>
+            <kendo-chart-series-item *ngFor="let item of series"   type="bar" [data]="item.data" [name]="item.name">
+            </kendo-chart-series-item>
+        </kendo-chart-series>
+    </kendo-chart>
+    <div *ngIf="load2" class="k-i-loading"></div>
+</div>

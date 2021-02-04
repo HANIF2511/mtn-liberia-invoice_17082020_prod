@@ -1,0 +1,38 @@
+
+<div class="grid-wrapper">
+    
+<kendo-grid  [kendoGridBinding]="data"   [resizable]="true"  [height]="550" [group]="group" [pageable]="true" [pageSize]="50">
+    <ng-template kendoGridToolbarTemplate>
+        <button type="button" kendoGridExcelCommand icon="file-excel">Export to Excel</button>
+        <button kendoGridPDFCommand icon="file-pdf">Export to PDF</button>
+    </ng-template>
+    <kendo-grid-column field="CALLTYPE" title="Call Type" [width]="90">
+    </kendo-grid-column>
+      <kendo-grid-column field="BSUBNO" title="B-Num" [width]="100">
+    </kendo-grid-column>
+       <kendo-grid-column field="DATE" title="Date" [width]="90">
+    </kendo-grid-column>
+    <kendo-grid-column field="TIME" title="Time" [width]="70">
+    </kendo-grid-column>
+    <kendo-grid-column field="DURATION" title="Duration" [width]="100">
+    </kendo-grid-column>
+    <kendo-grid-column field="AMOUNT" title="Amount" [width]="90">
+    </kendo-grid-column>
+<kendo-grid-excel fileName="voiceexcel.xlsx" [fetchData]="allData"></kendo-grid-excel>
+<kendo-grid-pdf fileName="voice.pdf" [allPages]="true" paperSize="A4" [repeatHeaders]="true" [landscape]="true">
+    <kendo-grid-pdf-margin top="2cm" left="1cm" right="1cm" bottom="2cm"></kendo-grid-pdf-margin>
+    <ng-template kendoGridPDFTemplate let-pageNum="pageNum" let-totalPages="totalPages">
+     <div class="page-template">
+        <div class="header">
+         <p> Page {{ pageNum }} of {{ totalPages }} </p>
+         <p> SubNo = {{mobile}}   ///  Period From: {{from_date}} To: {{to_date}} </p>
+        </div>
+        
+      </div>
+    </ng-template>
+</kendo-grid-pdf>
+</kendo-grid>
+<div *ngIf="load2" class="k-i-loading"></div>
+</div>
+
+     

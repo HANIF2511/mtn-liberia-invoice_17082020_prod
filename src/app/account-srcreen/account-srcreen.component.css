@@ -1,0 +1,142 @@
+
+
+/*
+body {
+
+	margin:0px;
+	font-family: 'Ubuntu', sans-serif;
+    background-size: 100% 110%;
+    background-color: #ffa500;
+  }
+*/
+
+
+.address {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+.address1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    font-size: large;
+}
+
+.s-head p, .for p {
+  color: #0e0d0d;
+}
+
+
+     
+  
+     
+      .login-header {
+      color:#e01616;
+      text-align:center;
+      font-size:120%;
+      font-style: italic;
+      }
+      .login-form {
+        border:.5px solid #fff;
+        background:#4facff;
+        border-radius:6px;
+        box-shadow:0px 0px 10px #000;
+        width: 70%;
+        height: 20%;
+        }
+      
+        .login-form {
+        box-sizing:border-box;
+        padding-top:15px;
+          padding-bottom:6%;
+        margin:5% auto;
+        text-align:center;
+        }
+        .login input[type="text"],
+    .login input[type="password"],
+    .login input[type="number"] {
+      max-width:400px;
+        width: 80%;
+      line-height:3em;
+      font-family: 'Ubuntu', sans-serif;
+      margin:1em 2em;
+      border-radius:5px;
+      border:2px solid #f2f2f2;
+      outline:none;
+      padding-left:10px;
+    }
+    .login-form button {
+      color:#E86850;
+      margin:20px 0px 10px -40%;
+      text-decoration:underline;
+      font-size: medium;
+      cursor:pointer;
+      }
+  
+     
+    .login-form input[type="submit"] {
+      height:30px;
+      width:300px;
+      background:#fff;
+      border:1px solid #f2f2f2;
+      border-radius:40px;
+      color: slategrey;
+      text-transform:uppercase;
+      font-family: 'Ubuntu';
+      cursor:pointer;
+    }
+
+    .k-button
+    {
+      height:30px;
+      width:300px;
+      background:#db9696;
+      border:1px solid #f2f2f2;
+      border-radius:40px;
+      color: #d8e2ec;
+      text-transform:uppercase;
+      font-family: 'Ubuntu';
+      cursor:pointer;
+    }
+    .k-button1
+    {
+      height:30px;
+      width:150px;
+      background:#db9696;
+      border:1px solid #f2f2f2;
+      border-radius:40px;
+      color: #d8e2ec;
+      
+      font-family: 'Ubuntu';
+      cursor:pointer;
+      align-content: center;
+      text-align: center;
+    }
+
+    label {
+      float: left;
+      width: 20em;
+      margin-right: 1em;
+      text-align: right;
+      color: #e01616;
+      font-size: large;
+      }
+
+      .register-form {
+        position: absolute;
+        top: 10cm;
+        left: 15cm;
+        width: 10cm;
+       height: 3cm;
+       font-size: large;
+       color: red;
+       align-content: center;
+       text-align: center;
+        
+        border:.5px solid #fff;
+        background:#bbc5ce;
+        border-radius:10px;
+        box-shadow:0px 0px 10px #000;
+        }
+      

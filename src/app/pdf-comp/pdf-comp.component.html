@@ -1,0 +1,15 @@
+
+
+<div class="example-config">
+    <button class="k-button" (click)="pdf.saveAs('invoice.pdf')">
+      Save As PDF
+    </button>
+    <button class="k-button"  onclick="window.print()">
+      Print
+    </button>
+  </div>
+
+  <kendo-pdf-export #pdf paperSize="A4" margin="0.3cm" [landscape]="true">
+    <kendo-grid-pdf-margin top="2cm" left="1cm" right="1cm" bottom="2cm"></kendo-grid-pdf-margin>
+    <app-pdf-invoice [data]="data"></app-pdf-invoice>
+  </kendo-pdf-export>

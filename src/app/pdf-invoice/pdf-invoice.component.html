@@ -1,0 +1,50 @@
+<div class="header" >
+    MTN Lonestar Cell - Invoice
+</div>
+
+<div class="address">
+  <div class="from">
+  
+    <p>
+   <!--   Antonio Moreno<br /> Naucalpan de Juárez<br /> México D.F., Mexico, 53500 -->
+   Name: {{name}} <br /> Contract No: {{contrno}} 
+    </p>
+  </div>
+  <div class="from">
+  
+    <p>
+   <!--   Antonio Moreno<br /> Naucalpan de Juárez<br /> México D.F., Mexico, 53500 -->
+  Invoice No: {{iv_no}}   <br />  Invoice Date: {{inv_date}} 
+    </p>
+  </div>
+  <div class="from">
+   
+    <p>
+      DueDate: {{duedate}}
+    </p>
+  </div>
+</div>
+
+<div class="items">
+ 
+  <kendo-grid [data]="data" [height]="450">
+    
+    <kendo-grid-column field="service" title="Services / SubNo: {{mobile}}" width="300" [headerStyle]="{'font-weight': 'bold' ,'background-color': '#ebf0f1','color': '#0e0d0d','line-height': '1em'}">
+      <ng-template kendoGridFooterTemplate>
+        Total Invoice Amount (GST inc.)
+      </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="amount" format="{0:c}" title="US$" width="80" [headerStyle]="{'font-weight': 'bold', 'background-color': '#ebf0f1','color': '#0e0d0d','line-height': '1em'}">
+        <ng-template kendoGridFooterTemplate let-column="column" >
+            {{ amount }}
+          </ng-template>
+          
+    </kendo-grid-column>
+    
+      </kendo-grid>
+      
+  <!--   <div class="paym">  Any payment during this period will be shown in the next invoice 
+
+     </div>
+     -->
+</div>

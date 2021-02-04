@@ -1,0 +1,47 @@
+
+
+
+
+
+    <div class = "address">
+            <div class = "s-head">
+        <p>
+         Name: {{name}} <br />    Contract No: {{contrno}} 
+        </p>
+          </div>
+          <div class = "s-head">
+            <p>
+             Statement No: {{statm_no}} <br /> Billing Period:  From: {{from_date}} To: {{to_date}}
+            </p>
+              </div>
+          <div class = "s-head">
+          <p>
+        Invoice Data: {{invdate}}  <br />   Due Date Before: {{duedate}}  
+         </p>
+          </div>
+    
+    </div>
+
+
+<h2>Opening Balance:  {{open_bal}}  </h2>
+<h2>Invoices For The Month:  {{tot_sub_inv}} </h2>
+<kendo-grid [kendoGridBinding]="data"   [resizable]="true"  [height]="300"  [pageable]="true" [pageSize]="50" > 
+    <ng-template kendoGridToolbarTemplate>
+        <button kendoGridPDFCommand icon="file-pdf">Export grid to PDF</button>
+    </ng-template>
+<kendo-grid-column field="SUB_NO"  title="Statement Of Account" width="150" [headerStyle]="{'font-weight': 'bold' ,'background-color': '#ebf0f1','color': '#0e0d0d','line-height': '1em'}"> </kendo-grid-column> 
+<kendo-grid-column field="AMOUNT" title="US$" width="80" [headerStyle]="{'font-weight': 'bold' ,'background-color': '#ebf0f1','color': '#0e0d0d','line-height': '1em'}"> </kendo-grid-column>
+<kendo-grid-pdf fileName="statement.pdf" [allPages]="true" paperSize="A4" [repeatHeaders]="true" [landscape]="true">
+    <kendo-grid-pdf-margin top="2cm" left="1cm" right="1cm" bottom="2cm"></kendo-grid-pdf-margin>
+    <ng-template kendoGridPDFTemplate let-pageNum="pageNum" let-totalPages="totalPages">
+     <div class="page-template">
+        <div class="header">
+         <p> Page {{ pageNum }} of {{ totalPages }} </p>
+         </div>
+        
+      </div>
+    </ng-template>
+</kendo-grid-pdf>
+ </kendo-grid>
+ <h2>Closing Balance:  {{closed_bal}}  </h2>
+

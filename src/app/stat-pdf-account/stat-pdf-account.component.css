@@ -1,0 +1,10 @@
+
+  .address {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.s-head p, .for p {
+  color: #0e0d0d;
+}

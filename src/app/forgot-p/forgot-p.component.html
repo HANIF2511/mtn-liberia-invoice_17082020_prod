@@ -1,0 +1,37 @@
+<div class="login-head" >
+    <a>MTN Liberia (Invoice Inquiry)</a>
+  </div>
+  <div class="bg-img" >
+    
+</div>
+
+  
+<!--
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+<form >
+<div class="login">
+  
+  <div class="login-form">
+       
+    <h2>A code will be sent to {{username}} , Please confirm.</h2>
+        <a  class="confirm" href="/enter-code-p">Confirm</a>
+       
+        <a class = "cancel" href="/login">Cancel</a>
+    
+      
+  </div>
+</div>
+</form>
+
+-->
+
+<kendo-dialog title="Please confirm." (close)="close('cancel')" [minWidth]="650" [width]="750">
+  <p style="margin: 30px; text-align: center; color: red; font-size: large;"  >A Code is sent to {{username}}</p>
+  <kendo-dialog-actions >
+      <button class="k-button" kendoButton (click)="close_no()">Cancel</button>
+      <button class="k-button" kendoButton (click)="close_yes()" primary="true">Confirm</button>
+  </kendo-dialog-actions>
+</kendo-dialog>
+
+

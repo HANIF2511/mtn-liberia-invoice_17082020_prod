@@ -1,0 +1,86 @@
+<style>
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  </style>
+  
+<!-- <div class="toplogin">
+<h1>MTN Liberia Invoice Inquery </h1>
+</div> 
+
+  <div class="login-head" >
+    <h1>MTN Liberia - Invoice Inquiry</h1>
+  </div>
+-->
+  <div class="bg-img" >
+    
+</div>
+
+  <br>
+  <br>
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+<div class="example">
+  <form class="k-form" [formGroup]="form">
+      <div class = "footer" > Lonestar Cell Bill Presentiment </div> 
+     
+      <div class="first">
+        <p>
+      <kendo-formfield>
+          <kendo-label [for]="contrno" text="Account Number"></kendo-label>
+          <input kendoTextBox  type = "number" [formControlName]="'contrno'" kendoTextBox #contrno>
+        </kendo-formfield> 
+    </p>
+    </div>
+    <h5>Or by</h5>
+    <div class="first">
+      <p>
+    <kendo-formfield>
+        <kendo-label [for]="mobile" text="Mobile Number"></kendo-label>
+        <input kendoTextBox  type = "number" [formControlName]="'mobile'" kendoTextBox #mobile>
+        
+    </kendo-formfield>
+  </p>
+  </div>
+
+      <kendo-formfield>
+          <kendo-label [for]="password" text="Password"></kendo-label>
+          <input kendoTextBox  type = "password" [formControlName]="'password'" kendoTextBox #password/>
+          <kendo-formerror *ngIf="form.controls.password.errors?.required">Error: Password is required</kendo-formerror>
+          </kendo-formfield>
+
+          
+
+
+     
+       <div class="k-form-buttons">
+          <button class="k-button k-primary" (click)="onSubmit(contrno.value,mobile.value,password.value)">Log In</button>
+          <button class="k-button" (click)="clearForm()">Clear</button> 
+   
+      </div>
+      <div class="k-form-buttons">
+         <br>
+          <button class="k-button" (click)="sign_up()">Sign Up! </button> 
+          <button class="k-button"  (click)= "onSubmit_forgot(mobile.value)">Forgot Password</button>
+          </div>
+  </form>
+</div>
+
+<br>
+<br>
+
+
+ 
+  <div class="footer"> Copyright © Genovity </div> 
+   
+ 
+

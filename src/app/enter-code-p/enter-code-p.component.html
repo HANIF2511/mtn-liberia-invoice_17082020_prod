@@ -1,0 +1,43 @@
+
+<style>
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  </style>
+
+
+<div class="register-head" >
+    <h1>MTN Liberia (Invoice Inquiry)</h1>
+  </div>
+  <div class="bg-img" >
+    
+  </div>
+  
+ 
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+
+<form (ngSubmit)="onSubmit(rcode.value)">
+<div class="register">
+  <div class="register-header">
+    <h1>Code Confirm</h1>
+  </div>
+  <div class="register-form" >
+    <h3>Enter Code:</h3>
+    <input #rcode type="text" placeholder="Enter Code" required /><br>
+            <br>
+    <input type="submit" value="Confirm" class="register-button"/>
+    <a class = "cancel" href="/login">Cancel</a>
+        
+  </div>
+</div>
+</form>
+

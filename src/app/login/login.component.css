@@ -1,0 +1,207 @@
+
+
+/*
+body {
+
+	margin:0px;
+	font-family: 'Ubuntu', sans-serif;
+    background-size: 100% 110%;
+    background-color: #ffa500;
+  }
+*/
+
+
+.bg-img {
+  /* The image used */
+      height:12em; background-size: 1550px; width: auto ; 
+    background-image:url('../mtn.PNG');
+    background-position: 50% 50%;
+    justify-content: center;
+     text-align: center;
+  }
+
+  .login-head {
+    color:#4619e7;
+    text-align:center;
+    font-size:300%;
+    }
+
+    .footer {
+      color:#8f0510;
+      text-align:center;
+      font-size: medium;
+      }
+
+  h1, h2, h3, h4, h5, h6, a {
+    margin:0; padding:0;
+    }
+    .login {
+    margin:0 auto;
+    max-width:500px;
+    }
+    .login-header {
+    color:#4619e7;
+    text-align:center;
+    font-size:300%;
+    }
+    .login-form {
+      border:.5px solid #fff;
+      background:#4facff;
+      border-radius:10px;
+      box-shadow:0px 0px 10px #000;
+      }
+      .login-form h3 {
+      text-align:left;
+      margin-left:40px;
+      color:#fff;
+      }
+      .login-form {
+      box-sizing:border-box;
+      padding-top:15px;
+        padding-bottom:10%;
+      margin:5% auto;
+      text-align:center;
+      }
+      .login input[type="text"],
+  .login input[type="password"],
+  .login input[type="number"] {
+	max-width:400px;
+	  width: 80%;
+	line-height:3em;
+	font-family: 'Ubuntu', sans-serif;
+	margin:1em 2em;
+	border-radius:5px;
+	border:2px solid #f2f2f2;
+	outline:none;
+	padding-left:10px;
+  }
+  .login-form button {
+    color:#E86850;
+    margin:20px 0px 10px -40%;
+    text-decoration:underline;
+    font-size: medium;
+    cursor:pointer;
+    }
+
+    .hani {
+      color:#E86850;
+      margin:20px 0px 10px -40%;
+      text-decoration:underline;
+      font-size: medium;
+      cursor:pointer;
+      }
+  .login-form input[type="button"] {
+	height:30px;
+	width:100px;
+	background:#fff;
+	border:1px solid #f2f2f2;
+	border-radius:20px;
+	color: slategrey;
+	text-transform:uppercase;
+	font-family: 'Ubuntu', sans-serif;
+	cursor:pointer;
+  }
+  .login-form input[type="submit"] {
+	height:30px;
+	width:170px;
+	background:#fff;
+	border:1px solid #f2f2f2;
+	border-radius:20px;
+	color: slategrey;
+	text-transform:uppercase;
+	font-family: 'Ubuntu';
+	cursor:pointer;
+  }
+  .sign-up{
+    color:#f2f2f2;
+    margin-left:-70%;
+    cursor:pointer;
+    text-decoration:underline;
+    }
+    .button{
+      color:#a50f0f;
+      margin-left:-70%;
+      cursor:pointer;
+      text-decoration:underline;
+      }
+      .button{
+        margin:10px 0;
+      }
+    .no-access {
+    color:#E86850;
+    margin:20px 0px 10px -40%;
+    text-decoration:underline;
+    font-size: medium;
+    cursor:pointer;
+    }
+    .try-again {
+    color:#f2f2f2;
+    text-decoration:underline;
+    cursor:pointer;
+    }
+    
+    /*Media Querie*/
+    @media only screen and (min-width : 150px) and (max-width : 530px){
+    .login-form h3 {
+      text-align:center;
+      margin:0;
+    }
+    .sign-up, .no-access {
+      margin:10px 0;
+    }
+    .login-button {
+      margin-bottom:10px;
+    }
+    }
+
+    .example {
+      display: flex;
+      justify-content: center;
+      height: 13cm;
+      border-left-width: 20;
+      border-right-width: 20;
+      padding: 60;
+      border-width: 7;
+      border:.5px solid #fff;
+      background:#b5cee4;
+      border-radius:10px;
+      box-shadow:0px 0px 10px #000;
+     
+      width:500px; margin:0 auto;
+      align-content: center;
+     
+  }
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrap .arrival-date {
+    width: 90%;
+    margin-right: 18px;
+  }
+  .textarea { resize: vertical; }
+  .k-form { width: 250px; }
+  
+  .spin {
+    -moz-appearance: textfield;
+    opacity: 1;
+  }
+
+  .first {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.k-form-buttons button
+    {
+      height:30px;
+      width:300px;
+      background:#fff;
+      border:1px solid #f2f2f2;
+      border-radius:40px;
+      color: slategrey;
+      text-transform:uppercase;
+      font-family: 'Ubuntu';
+      cursor:pointer;
+    }

@@ -1,0 +1,52 @@
+
+<nav class="navbar navbar-expand navbar-dark text-secondary bg-primary justify-content-center order-2" >
+ 
+  <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/select-invoice">Home</a>
+      <a class="nav-item nav-link" (click)="logout()">Logout</a>
+  <!--    <a class="nav-item nav-link" routerLink="/about">About</a> -->
+  </div>
+ 
+</nav>
+
+<div class = "formLogin">
+<div class="h1" >
+   
+   <a>Mobile No: {{mobile}}</a>
+    <a *ngIf="load_voice"> Some tabs may not be acceable due to customer request</a>
+      </div>
+      <div class ="formLogin">
+        <kendo-tabstrip (tabSelect)="onTabSelect($event)" [keepTabContent]="true">
+          <kendo-tabstrip-tab [title]="'Services'" [selected]="true">
+            <ng-template kendoTabContent>
+              <app-pdf-comp></app-pdf-comp>
+            </ng-template>
+          </kendo-tabstrip-tab>
+       <kendo-tabstrip-tab [title]="'Chart'" >
+            <ng-template kendoTabContent>
+            <kendo-charts ></kendo-charts>
+            </ng-template>
+          </kendo-tabstrip-tab> 
+           <kendo-tabstrip-tab [title]="'Calls'" >
+            <ng-template kendoTabContent>
+            <app-pdf-voice> </app-pdf-voice>    
+            </ng-template>
+          </kendo-tabstrip-tab>
+    <!--    <kendo-tabstrip-tab [title]="'Data Calls'">
+            <ng-template kendoTabContent>
+            <excel-export > </excel-export>
+            </ng-template>
+            </kendo-tabstrip-tab> 
+            <kendo-tabstrip-tab [title]="'Statement'"  [disabled]="load2">
+              <ng-template kendoTabContent>
+                <app-stat-account></app-stat-account>
+                </ng-template>
+            </kendo-tabstrip-tab> 
+           -->
+        </kendo-tabstrip>
+       
+         
+      </div>   
+    </div>   
+
+   

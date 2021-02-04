@@ -1,0 +1,13 @@
+<div class="example-config">
+    
+    <button class="k-button"  onclick="window.print()">
+      Print
+    </button>
+    <button class="k-button" (click)="pdf.saveAs('statpage.pdf')">
+      Save As PDF page
+    </button>
+  </div>
+
+  <kendo-pdf-export #pdf paperSize="A4" margin="1cm" [landscape]="true">
+    <app-stat-pdf-account [data]="data"></app-stat-pdf-account>
+  </kendo-pdf-export>

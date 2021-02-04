@@ -1,0 +1,60 @@
+<style>
+  
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+    </style>
+    
+  <!-- <div class="toplogin">
+  <h1>MTN Liberia Invoice Inquery </h1>
+  </div> 
+  
+  <div class="login-head" >
+      <a>MTN Liberia - Invoice Inquiry</a>
+    </div>
+   
+    -->
+  
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+  <nav class="navbar navbar-expand navbar-dark text-secondary bg-primary justify-content-center order-2" >
+ 
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/select-account">ViewBill</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    <!--    <a class="nav-item nav-link" routerLink="/about">About</a> -->
+    </div>
+   
+  </nav>
+  
+  <form > 
+  <div class="login">
+    <div class="login-header">
+      <h3>Account No: {{mobilenum}}</h3> <br>
+         <h3>View Bill</h3>
+      
+    </div>
+    <div class="login-form">
+
+     
+      <h3> Select Bill Date : </h3>
+       <select #sel (click)="onChange(sel.value)">
+         <option *ngFor="let i of array_subno">{{i.INVDATE}}</option>
+     </select>
+     <br/>
+     <br/>
+     <br/>
+     <input type="button" (click)="getVal()" value="submit"/>  
+    
+ </div>
+  </div>
+  
+  </form>
+
+ 
+
+  <!-- Copyright -->
+  <div class="footer"> Lonestar Cell LBDI building  Congo Town  Monrovia,Liberia Tel: 06 500000 </div>
+  
+  
+  

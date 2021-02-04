@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 25px;
+  background-color: #ebf0f1;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Applies to all <h2>...</h2> elements.  */
+h2 {
+  display: flex;
+  justify-content: center;
+ font-style: italic;
+ font-size: large; 
+color: #ff4500;
+text-align: center;
+padding: 10px;
+  
+}
+
+a {
+  display: flex;
+  justify-content: center;
+ font-style: italic;
+ font-size: x-large; 
+color: #aa3939;
+text-align: center;
+padding: 10px;
+}
+
+b {
+  display: flex;
+  justify-content: right;
+ font-style: italic;
+ font-size: 4mm; 
+color: #d60c0c;
+text-align: center;
+padding: 10px;
+}   
+
+
+
+
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass { color: red; }
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: green; }

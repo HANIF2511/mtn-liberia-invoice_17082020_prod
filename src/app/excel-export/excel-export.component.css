@@ -1,0 +1,13 @@
+.k-i-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 64px;
+    background-color: #6e77804d;
+    color: #ff6757;
+  }
+  grid-wrapper {
+    position: relative;
+  }

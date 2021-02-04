@@ -1,0 +1,10 @@
+<div class="example-config">
+    
+    <button class="k-button"  onclick="window.print()">
+      Print
+    </button>
+  </div>
+
+  <kendo-pdf-export #pdf paperSize="A4" margin="0.5cm" [avoidLinks]="true" [repeatHeaders]="repeatHeaders">
+    <app-pdf-voice-calls [data]="data"></app-pdf-voice-calls>
+  </kendo-pdf-export>

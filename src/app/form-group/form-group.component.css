@@ -1,0 +1,47 @@
+.bg-img {
+    /* The image used */
+        height:10em; background-size: 1550px; width: auto ; 
+      background-image:url('../mtn.PNG');
+      background-position:50% 50%;
+      justify-content: center;
+    }
+  
+    .h1 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 20em;
+      color: #840ad6;
+      font-size: 06mm;
+    
+     
+      }
+      .kendo-tabstrip p {
+        margin: 0;
+        padding: 8px;
+    }
+
+    .formLogin{
+      height: 80%;
+      margin: 0;
+      padding: 0;
+      border-width: 0;
+    }
+   
+
+    .h5 {
+     
+      width: 75%;
+        height: 13cm;
+        margin: 0 auto;
+    }
+
+    .h3 {
+     
+      margin-left: auto;
+      margin-right: auto;
+      width: 20em;
+      color: #cc3535;
+      font-size: 20mm;
+
+       
+      }

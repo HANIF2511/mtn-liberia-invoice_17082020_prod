@@ -1,0 +1,47 @@
+
+<style>
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  </style>
+
+
+
+  <div class="bg-img" >
+    
+  </div>
+  
+ 
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+<div class="register">
+<form  [formGroup]="form">
+
+  <div class="register-header">
+    <h1>Register</h1>
+  </div>
+  <div class="register-form" >
+    <h3>First Name:</h3>
+    <input #firstname type="text" placeholder="First name" /><br>
+    <h3>Last Name:</h3>
+  <input #lastname type="text" placeholder="Last Name"/>
+    	<h3>Mobile Number:</h3>
+    <input #username type="number" placeholder="Mobile Number"/><br>
+       <br>
+ <input type="submit" class="fadeIn fourth" (click)= "onSubmit(firstname.value,lastname.value,username.value)" value="Register"/><br>
+       <br>
+       <input type="submit" class="fadeIn fourth" (click)= "onSubmit_cancel()" value="Cancel">
+
+         
+  </div>
+</form>
+</div>
+
