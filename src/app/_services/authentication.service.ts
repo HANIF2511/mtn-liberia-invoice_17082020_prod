@@ -43,8 +43,8 @@ export class AuthenticationService {
     public url_all: string;
     //public url_server = "http://localhost:8091";
  //   public url_server = "http://192.168.43.167:8091";
-     public url_server = "http://gmashro.com:8091";
-   //  public url_server = "http://localhost:8091";
+    public url_server = "http://gmashro.com:8091";
+  //   public url_server = "http://localhost:8091";
     public Username: string;
      public objs: any = {};
      public last_objs: any = {};
@@ -202,7 +202,7 @@ return this.http.get<any>(this.url_all )
 check_macaddress() {
        
        
-  this.url_all = this.url_server + "/api/macaddress?" ;
+  this.url_all = this.url_server + "/billpresent/macaddress?" ;
   
 
 
@@ -220,7 +220,7 @@ return this.http.get<any>(this.url_all )
 check_license() {
        
        
-  this.url_all = this.url_server + "/api/license?" ;
+  this.url_all = this.url_server + "/billpresent/license?" ;
   
 
 
@@ -238,7 +238,7 @@ return this.http.get<any>(this.url_all )
   check_mobile(mobilenum: string) {
        
         
-    this.url_all = this.url_server + "/api/presssubno?SUBNO=" + mobilenum  ;
+    this.url_all = this.url_server + "/billpresent/presssubno?SUBNO=" + mobilenum  ;
     
 
 
@@ -262,7 +262,7 @@ return this.http.get<any>(this.url_all )
 check_voice(mobilenum: string , inv_date: string) {
        
         
-  this.url_all = this.url_server + "/api/presscheckvoice?SUBNO=" + mobilenum  + "&INVDATE=" + inv_date;
+  this.url_all = this.url_server + "/billpresent/presscheckvoice?SUBNO=" + mobilenum  + "&INVDATE=" + inv_date;
   
 
 
@@ -288,7 +288,7 @@ return this.http.get<any>(this.url_all )
     invsummary(mobilenum: string, invdate: string) {
        
         
-            this.url_all = this.url_server + "/api/pressmain?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
+            this.url_all = this.url_server + "/billpresent/pressmain?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
             
 
 
@@ -314,7 +314,7 @@ return this.http.get<any>(this.url_all )
     invcontrno(mobilenum: string, invdate: string) {
        
         
-      this.url_all = this.url_server + "/api/presscontrno?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
+      this.url_all = this.url_server + "/billpresent/presscontrno?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
       
      
 
@@ -359,7 +359,7 @@ return this.http.get<any>(this.url_all )
 invsubno(mobilenum: string) {
        
         
-  this.url_all = this.url_server + "/api/press_subno?SUBNO=" + mobilenum ;
+  this.url_all = this.url_server + "/billpresent/press_subno?SUBNO=" + mobilenum ;
   
  
 
@@ -402,7 +402,7 @@ return this.http.get<any>(this.url_all )
 inv4contrno(mobilenum: string) {
        
         
-  this.url_all = this.url_server + "/api/press_contrno?SUBNO=" + mobilenum ;
+  this.url_all = this.url_server + "/billpresent/press_contrno?SUBNO=" + mobilenum ;
   
  
 
@@ -447,7 +447,7 @@ return this.http.get<any>(this.url_all )
 invcontrnoinfo( invdate: string,mobilenum: string) {
        
         
-  this.url_all = this.url_server + "/api/presscontrinfo?INVDATE=" + invdate + "&SUBNO=" + mobilenum;
+  this.url_all = this.url_server + "/billpresent/presscontrinfo?INVDATE=" + invdate + "&SUBNO=" + mobilenum;
   
  
   console.log("URLCONTRINFO:",this.url_all);
@@ -499,7 +499,7 @@ invcontrnoinfo( invdate: string,mobilenum: string) {
     invsumm(mobilenum: string, invdate: string) {
        
         
-        this.url_all = this.url_server + "/api/presssum?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
+        this.url_all = this.url_server + "/billpresent/presssum?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
         
 
 
@@ -553,7 +553,7 @@ invcontrnoinfo( invdate: string,mobilenum: string) {
 invtax(mobilenum: string, invdate: string) {
        
         
-  this.url_all = this.url_server + "/api/presstax?SUBNO=" + mobilenum ;
+  this.url_all = this.url_server + "/billpresent/presstax?SUBNO=" + mobilenum ;
   
 
 
@@ -606,7 +606,7 @@ allRows2.push(queryrows2);
 invdetdata(mobilenum: string, invdate: string) {
        
   
-    this.url_all = this.url_server + "/api/pressdetdata?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
+    this.url_all = this.url_server + "/billpresent/pressdetdata?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
     
 
 
@@ -690,7 +690,7 @@ var allRows2 = [];
 invdetvoice(mobilenum: string, invdate: string) {
        
         
-    this.url_all = this.url_server + "/api/pressdetvoice?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
+    this.url_all = this.url_server + "/billpresent/pressdetvoice?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
     
     localStorage.setItem('disable_voice', 'N');
 
@@ -745,7 +745,7 @@ return this.http.get<any>(this.url_all )
 invchart(mobilenum: string, invdate: string) {
        
         
-    this.url_all = this.url_server + "/api/pressinvstat?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
+    this.url_all = this.url_server + "/billpresent/pressinvstat?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
     
 var querychart;
 var allRowschart = []; 
@@ -768,7 +768,7 @@ return this.http.get<any>(this.url_all )
 invGet(mobilenum: string, invdate: string) {
   var resultJson = [];
 
-  this.url_all = this.url_server + "/api/pressinvget?_FORMAT=json&SUBNO=" + mobilenum + "&INVDATE=" + invdate;
+  this.url_all = this.url_server + "/billpresent/pressinvget?_FORMAT=json&SUBNO=" + mobilenum + "&INVDATE=" + invdate;
   const body = {
       title: 'Angular POST Request Example'
   }
@@ -796,7 +796,7 @@ invGet(mobilenum: string, invdate: string) {
 invstatement(mobilenum: string, invdate: string) {
        
         
-  this.url_all = this.url_server + "/api/pressstatement?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
+  this.url_all = this.url_server + "/billpresent/pressstatement?SUBNO=" + mobilenum + "&INVDATE=" + invdate;
   
 
 

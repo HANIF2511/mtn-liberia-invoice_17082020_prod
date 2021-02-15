@@ -11,3 +11,19 @@
   grid-wrapper {
     position: relative;
   }
+
+
+  .grid-wrapper .k-button
+  {
+    
+      height:30px;
+      width:220px;
+      background:#db9696;
+      border:1px solid #f2f2f2;
+      border-radius:40px;
+      color: #d8e2ec;
+      text-transform:uppercase;
+      font-family: 'Ubuntu';
+      cursor:pointer;
+    
+  }
